@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya's Portfolio - Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color:beige;
+            color: #151214;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(202, 39, 134, 0.9);
+            color: white;
+            padding: 40px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 35px;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .project-box {
+            flex: 3 4 calc(45% - 20px); 
+            border: 7px solid #ff00a6;
+            border-radius: 35px;
+            padding: 30px; 
+            margin: 20px; 
+            background-color: #e7f3ff;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64b20;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .project-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section">
+            <img src="home.jpg" alt="HTML" width="300" height="200">
+            <img src="video.jpg" alt="CSS" width="300" height="200">
+        <h2>Open Source Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">Video Conferencing Platform</div>
+            <div class="project-box">Medical Store Management System</div>
+            <div class="project-box">Disaster Recovery Management</div>
+            <div class="project-box">Optimal Geospatial Indexing System in India</div>
+        </div>
+        <a href="achievements.html">
+            <button>See Achievements & Certifications</button>
+        </a>
+    </section>
+</body>
+</html>
